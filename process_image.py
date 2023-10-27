@@ -48,7 +48,7 @@ def crop_and_save_images_from_db(input_cases,input_bullet,output_dir):
             scale_crop_bullet = [tuple(map(float, line.strip().split(','))) for line in lines[line_bullet_start:line_bullet_end]]
             DB_param = tuple(lines[line_db].split(','))
         #print(DB_param)
-        
+        #TEST
         conn = psycopg2.connect(database=DB_param[0].strip(),
                                 host=DB_param[1].strip(),
                                 user=DB_param[2].strip(),
