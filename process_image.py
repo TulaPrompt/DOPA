@@ -72,7 +72,7 @@ def crop_and_save_images_from_db(input_cases,input_bullet,output_dir):
             
 
         except Exception as sql_error:
-            # บันทึก error ของคำสั่ง SQL ที่ไม่สามารถประมวลผลได้
+            # SQL Syntax Error
             error_message = f"Error : executing SQL command for  Cases - {str(sql_error)}"
             print(error_message)
             logging.error(error_message)
